@@ -451,9 +451,9 @@ ggplot() + geom_sf(data = rais_gap_plot_rio, aes(fill = `Gap Salarial`), colour 
 
 ##datasets##
 gap_ufs <- rais_gap_plot_br[order(-rais_gap_plot_br$`Gap Salarial`),] %>% as.data.frame() %>% select(sigla_uf, name_state, `Gap Salarial`)
-write_csv(gap_ufs, file = 'gap_ufs.csv')
+write_csv(gap_ufs, file = 'outputs/gap_ufs.csv')
 gap_mun_rj <- rais_gap_plot_rio[order(-rais_gap_plot_rio$`Gap Salarial`),] %>% as.data.frame() %>% select(id_municipio, name_muni, `Gap Salarial`)
-write_csv(gap_mun_rj, file = 'gap_mun_rj.csv')
+write_csv(gap_mun_rj, file = 'outputs/gap_mun_rj.csv')
 
 
 
