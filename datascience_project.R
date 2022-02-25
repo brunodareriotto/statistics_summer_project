@@ -22,7 +22,7 @@ texto_azul <- element_text(color = "#201c5c", family = "Merriweather")
 
 
 #dados_nacionais_rais --- evolucao de rendas no brasil por nacionalidade#
-setwd("~/Downloads/puc-rio/estat_verao/summer_datascience_project")
+setwd("~/Desktop/statistics_summer_project")
 basedosdados::set_billing_id("projeto-do-bruno-dare")
 
 query_rais <- bdplyr("br_me_rais.microdados_vinculos") %>%

@@ -1,1 +1,2 @@
-# statistics_summer_project
+Neste projeto, aproveito dados da Relação Anual de Informações Sociais (RAIS) coletados
+via https://basedosdados.org/dataset/br-me-rais para investigar o comportamento de salários/empregos --- (i) para pessoas de nacionalidades diferentes, (ii) para pessoas pretas, pardas, brancas ou amarelas.
