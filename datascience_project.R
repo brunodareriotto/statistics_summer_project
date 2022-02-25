@@ -167,7 +167,7 @@ ggplot(rais_rio_plot, aes(x = valor_remuneracao_media, fill = Nacionalidade)) +
   theme(panel.background = element_rect(fill = "#f5f5fb"), axis.line = element_line(color="#f5f5fb", size = 0.25), title = element_text(color = '#201c5c', face = 'bold', family = 'Merriweather'), axis.title = element_text(color = '#201c5c', family = 'Merriweather'), axis.text = texto_azul, legend.text = texto_azul) +
   scale_color_viridis(discrete = TRUE, option = "G", end = 0.95) +
   scale_fill_viridis(discrete = TRUE, option = "G", end = 0.95) + ylab('Número de Vínculos') + 
-  xlab('Remuneração Média em R$') + ylab('Count') +xlim(0,20000) + ggtitle('Histograma de Renda no Brasil entre Nacionalidades (2018)')
+  xlab('Remuneração Média em R$') + ylab('Count') +xlim(0,10000) + ggtitle('Histograma de Renda no Brasil entre Nacionalidades (2018)')
 
 
 rais_rio_plot_p <- rais_rio_n %>% filter(nac == "Haitiano" | nac == "Italiana" | nac == "Venezuelano" | nac == "Congolês" | nac == "Chinesa")
