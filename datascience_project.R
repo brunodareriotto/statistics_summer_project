@@ -337,7 +337,7 @@ rais_ev_plot_2019 <- rais_ev_plot %>% filter(ano == '2019')
 ggplot(rais_ev_plot_2019, aes(x = cor, y = vinculo)) + geom_point(aes(fill = `Remuneração Média (R$)`), size = 5, shape = 23) +
   theme(panel.background = element_rect(fill = "#f5f5fb"), axis.line = element_line(color="#f5f5fb", size = 0.25), title = element_text(color = '#201c5c', face = 'bold', family = 'Merriweather'), axis.title = element_text(color = '#201c5c', family = 'Merriweather'), axis.text = texto_azul, legend.text = texto_azul) +
   scale_color_viridis(discrete = FALSE, option = "G", end = 0.95) + ylab('') + xlab('') +
-  scale_fill_viridis(discrete = FALSE) + ggtitle('Renda Média em 2019 Por Grupos')
+  scale_fill_viridis(discrete = FALSE, option = "G") + ggtitle('Renda Média em 2019 Por Grupos')
 
 rais_ev_plot_diretores <- rais_ev_plot %>% filter(vinculo == 'Diretor')
 
