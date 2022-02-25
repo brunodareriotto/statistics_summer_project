@@ -126,7 +126,7 @@ query_rio <- bdplyr("br_me_rais.microdados_vinculos") %>%
   filter(ano == 2018, id_municipio == '3304557') 
 rais_rio <- bd_collect(query_rio) 
 
-dic_bairros <- read_excel("RAIS_vinculos_layout.xls", sheet = "BAIRRO_RJ", range = "A2:C177") %>% 
+dic_bairros <- read_excel("inputs/RAIS_vinculos_layout.xls", sheet = "BAIRRO_RJ", range = "A2:C177") %>% 
   rename(bairros_rj = `Valor na Fonte`, nomes_bairros_rj = `Descrição`) %>%
   select(bairros_rj, nomes_bairros_rj)
 
